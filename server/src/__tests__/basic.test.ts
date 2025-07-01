@@ -72,15 +72,21 @@ describe("Basic Functionality Tests", () => {
       expect(schema.paths["description"]).toBeDefined();
       expect(schema.paths["category"]).toBeDefined();
       expect(schema.paths["client"]).toBeDefined();
-      expect(schema.paths["budget"]).toBeDefined();
-      expect(schema.paths["duration"]).toBeDefined();
+      expect(schema.paths["budget.min"]).toBeDefined();
+      expect(schema.paths["budget.max"]).toBeDefined();
+      expect(schema.paths["budget.type"]).toBeDefined();
+      expect(schema.paths["duration.value"]).toBeDefined();
+      expect(schema.paths["duration.unit"]).toBeDefined();
     });
 
     it("should create job instance with default values", () => {
       const jobData = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development" as const,
+        subcategory: "Frontend Development",
+        skills: ["React", "TypeScript"],
         client: "507f1f77bcf86cd799439011",
         budget: {
           min: 1000,
@@ -90,6 +96,11 @@ describe("Basic Functionality Tests", () => {
         duration: {
           value: 2,
           unit: "weeks" as const,
+        },
+        experienceLevel: "intermediate" as const,
+        projectType: "one-time" as const,
+        location: {
+          type: "remote" as const,
         },
       };
 

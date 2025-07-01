@@ -66,9 +66,10 @@ describe("Job Model", () => {
     it("should create a valid job", async () => {
       const validJob = {
         title: "Test Job",
-        description: "This is a test job description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
-        subcategory: "Frontend",
+        subcategory: "Frontend Development",
         skills: ["React", "TypeScript"],
         budget: {
           min: 1000,
@@ -82,6 +83,9 @@ describe("Job Model", () => {
         experienceLevel: "intermediate",
         projectType: "one-time",
         client: clientId,
+        location: {
+          type: "remote",
+        },
         visibility: "public",
       };
 
@@ -106,8 +110,25 @@ describe("Job Model", () => {
 
     it("should require title", async () => {
       const jobWithoutTitle = {
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -128,6 +149,22 @@ describe("Job Model", () => {
       const jobWithoutDescription = {
         title: "Test Job",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -147,7 +184,24 @@ describe("Job Model", () => {
     it("should require category", async () => {
       const jobWithoutCategory = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -167,8 +221,25 @@ describe("Job Model", () => {
     it("should require client", async () => {
       const jobWithoutClient = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
       };
 
       const job = new Job(jobWithoutClient);
@@ -187,8 +258,25 @@ describe("Job Model", () => {
     it("should validate category enum", async () => {
       const jobWithInvalidCategory = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "invalid-category",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -208,9 +296,25 @@ describe("Job Model", () => {
     it("should validate experience level enum", async () => {
       const jobWithInvalidExperience = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
         experienceLevel: "invalid-level",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -230,9 +334,25 @@ describe("Job Model", () => {
     it("should validate project type enum", async () => {
       const jobWithInvalidProjectType = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
         projectType: "invalid-type",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -252,8 +372,25 @@ describe("Job Model", () => {
     it("should validate visibility enum", async () => {
       const jobWithInvalidVisibility = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         visibility: "invalid-visibility",
         client: clientId,
       };
@@ -271,30 +408,37 @@ describe("Job Model", () => {
       expect(err.errors["visibility"]).toBeDefined();
     });
 
-    it("should validate budget range", async () => {
+    it("should auto-correct budget range when max is less than min", async () => {
       const jobWithInvalidBudget = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
         budget: {
           min: 2000,
           max: 1000, // Max less than min
           type: "fixed",
         },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
       const job = new Job(jobWithInvalidBudget);
-      let err: any;
+      const savedJob = await job.save();
 
-      try {
-        await job.save();
-      } catch (error) {
-        err = error;
-      }
-
-      expect(err).toBeInstanceOf(mongoose.Error.ValidationError);
-      expect(err.errors["budget.max"]).toBeDefined();
+      // The pre-save middleware should have corrected the budget
+      expect(savedJob.budget.max).toBe(savedJob.budget.min);
+      expect(savedJob.budget.max).toBe(2000);
     });
   });
 
@@ -302,8 +446,25 @@ describe("Job Model", () => {
     it("should set default status to open", async () => {
       const jobData = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -316,8 +477,25 @@ describe("Job Model", () => {
     it("should set default visibility to public", async () => {
       const jobData = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -330,8 +508,25 @@ describe("Job Model", () => {
     it("should set default views to 0", async () => {
       const jobData = {
         title: "Test Job",
-        description: "Test description",
+        description:
+          "This is a comprehensive test job description that meets the minimum length requirement of 50 characters for job descriptions.",
         category: "web-development",
+        subcategory: "Frontend Development",
+        skills: ["React"],
+        budget: {
+          min: 1000,
+          max: 2000,
+          type: "fixed",
+        },
+        duration: {
+          value: 2,
+          unit: "weeks",
+        },
+        experienceLevel: "intermediate",
+        projectType: "one-time",
+        location: {
+          type: "remote",
+        },
         client: clientId,
       };
 
@@ -347,14 +542,16 @@ describe("Job Model", () => {
       // Create multiple jobs for testing
       const jobData1 = {
         title: "React Developer Needed",
-        description: "Looking for React developer",
+        description:
+          "Looking for an experienced React developer to build a modern web application with comprehensive features and functionality.",
         category: "web-development",
-        subcategory: "Frontend",
+        subcategory: "Frontend Development",
         skills: ["React", "JavaScript"],
         budget: { min: 1000, max: 2000, type: "fixed" },
         duration: { value: 2, unit: "weeks" },
         experienceLevel: "intermediate",
         projectType: "one-time",
+        location: { type: "remote" },
         client: clientId,
         status: "open",
         visibility: "public",
@@ -362,14 +559,16 @@ describe("Job Model", () => {
 
       const jobData2 = {
         title: "Node.js Backend Developer",
-        description: "Looking for Node.js developer",
+        description:
+          "Seeking a skilled Node.js developer to create robust backend services and APIs for our enterprise application platform.",
         category: "web-development",
-        subcategory: "Backend",
+        subcategory: "Backend Development",
         skills: ["Node.js", "Express"],
         budget: { min: 1500, max: 3000, type: "fixed" },
         duration: { value: 3, unit: "weeks" },
         experienceLevel: "expert",
         projectType: "one-time",
+        location: { type: "remote" },
         client: clientId,
         status: "open",
         visibility: "public",
@@ -377,16 +576,18 @@ describe("Job Model", () => {
 
       const jobData3 = {
         title: "Mobile App Developer",
-        description: "Looking for mobile developer",
+        description:
+          "Need a talented mobile developer to create a feature-rich iOS application with modern UI/UX design and functionality.",
         category: "mobile-development",
-        subcategory: "iOS",
+        subcategory: "iOS Development",
         skills: ["Swift", "iOS"],
         budget: { min: 2000, max: 4000, type: "fixed" },
         duration: { value: 4, unit: "weeks" },
-        experienceLevel: "beginner",
+        experienceLevel: "entry",
         projectType: "ongoing",
+        location: { type: "remote" },
         client: clientId,
-        status: "closed",
+        status: "completed",
         visibility: "public",
       };
 

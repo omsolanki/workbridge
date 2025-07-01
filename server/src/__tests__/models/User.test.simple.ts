@@ -44,7 +44,7 @@ describe("User Model (Simple)", () => {
       expect(firstNamePath.isRequired).toBe(true);
       expect(lastNamePath.isRequired).toBe(true);
       expect(passwordPath.isRequired).toBe(true);
-      expect(rolePath.isRequired).toBe(true);
+      expect(rolePath.defaultValue).toBe("freelancer");
     });
 
     it("should have role enum validation", () => {
@@ -60,12 +60,12 @@ describe("User Model (Simple)", () => {
   describe("Virtual Fields", () => {
     it("should have fullName virtual", () => {
       const schema = User.schema;
-      expect(schema.virtuals.fullName).toBeDefined();
+      expect((schema as any).virtuals.fullName).toBeDefined();
     });
 
     it("should have isLocked virtual", () => {
       const schema = User.schema;
-      expect(schema.virtuals.isLocked).toBeDefined();
+      expect((schema as any).virtuals.isLocked).toBeDefined();
     });
   });
 
