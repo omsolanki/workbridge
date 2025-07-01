@@ -81,7 +81,8 @@ const JobsPage: React.FC = () => {
     selectedCategory,
     selectedExperience,
     selectedDuration,
-    budgetRange,
+    budgetRange.min,
+    budgetRange.max,
     dispatch,
   ]);
 

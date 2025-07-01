@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { AppDispatch, RootState } from "./store";
@@ -22,6 +22,7 @@ import ProposalsPage from "./pages/ProposalsPage";
 
 // Components
 import Navbar from "./components/Navbar";
+import DebugTool from "./components/DebugTool";
 
 // Protected Route Component
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({
@@ -73,17 +74,26 @@ const AdminRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const App: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { isAuthenticated, loading } = useSelector(
+  const { isAuthenticated, loading, user } = useSelector(
     (state: RootState) => state.auth
   );
+  const hasAttemptedProfileFetch = useRef(false);
 
   useEffect(() => {
     // Check if user is authenticated on app load
     const token = localStorage.getItem("token");
-    if (token && !isAuthenticated) {
+    if (token && !isAuthenticated && !hasAttemptedProfileFetch.current) {
+      hasAttemptedProfileFetch.current = true;
       dispatch(getProfile());
     }
-  }, [dispatch, isAuthenticated]);
+  }, [dispatch]); // Only depend on dispatch, not isAuthenticated
+
+  // Reset the ref when user logs out
+  useEffect(() => {
+    if (!isAuthenticated && !localStorage.getItem("token")) {
+      hasAttemptedProfileFetch.current = false;
+    }
+  }, [isAuthenticated]);
 
   if (loading) {
     return (
@@ -123,6 +133,7 @@ const App: React.FC = () => {
       {isAuthenticated && <Navbar />}
 
       <main className={isAuthenticated ? "pt-16" : ""}>
+        <DebugTool />
         <Routes>
           {/* Public Routes */}
           <Route

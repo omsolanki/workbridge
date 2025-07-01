@@ -21,7 +21,7 @@ const getInitialToken = (): string | null => {
 const initialState: AuthState = {
   user: null,
   token: getInitialToken(),
-  isAuthenticated: !!getInitialToken(), // Set to true if token exists
+  isAuthenticated: false, // Don't assume authentication just because token exists
   loading: false,
   error: null,
 };
@@ -124,10 +124,12 @@ const authSlice = createSlice({
       .addCase(register.fulfilled, (state, action) => {
         state.loading = false;
         state.isAuthenticated = true;
-        state.user = action.payload.user;
-        state.token = action.payload.token;
+        // Handle the new response structure: { success: true, data: {...} }
+        const responseData = action.payload.data || action.payload;
+        state.user = responseData.user;
+        state.token = responseData.token;
         try {
-          localStorage.setItem("token", action.payload.token);
+          localStorage.setItem("token", responseData.token);
         } catch {
           // Ignore localStorage errors
         }
@@ -145,10 +147,12 @@ const authSlice = createSlice({
       .addCase(login.fulfilled, (state, action) => {
         state.loading = false;
         state.isAuthenticated = true;
-        state.user = action.payload.user;
-        state.token = action.payload.token;
+        // Handle the new response structure: { success: true, data: {...} }
+        const responseData = action.payload.data || action.payload;
+        state.user = responseData.user;
+        state.token = responseData.token;
         try {
-          localStorage.setItem("token", action.payload.token);
+          localStorage.setItem("token", responseData.token);
         } catch {
           // Ignore localStorage errors
         }
@@ -198,6 +202,14 @@ const authSlice = createSlice({
       .addCase(getProfile.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message || "Failed to get profile";
+        // Clear invalid token on profile fetch failure
+        state.token = null;
+        state.isAuthenticated = false;
+        try {
+          localStorage.removeItem("token");
+        } catch {
+          // Ignore localStorage errors
+        }
       })
 
       // Update Profile

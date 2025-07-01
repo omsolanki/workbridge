@@ -37,7 +37,7 @@ const DashboardPage: React.FC = () => {
 
   useEffect(() => {
     if (isAuthenticated && user) {
-      dispatch(getProfile());
+      // Don't call getProfile() if user already exists
       if (user.role === "client") {
         dispatch(fetchMyJobs());
         dispatch(fetchProposals());
