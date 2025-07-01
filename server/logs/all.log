@@ -1,0 +1,175 @@
+2025-06-30 12:11:00:110 [31merror[39m: [31mDatabase connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[39m
+2025-06-30 12:12:32:1232 [31merror[39m: [31mDatabase connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/[39m
+2025-06-30 12:14:41:1441 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-00.7dkcqrj.mongodb.net[39m
+2025-06-30 12:15:15:1515 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-00.7dkcqrj.mongodb.net[39m
+2025-06-30 12:15:15:1515 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-06-30 12:15:15:1515 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-06-30 12:15:15:1515 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-06-30 12:15:15:1515 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-06-30 12:15:23:1523 [32minfo[39m: [32m::1 - - [30/Jun/2025:06:45:23 +0000] "GET /api/ping HTTP/1.1" 200 112 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-06-30 12:15:23:1523 [32minfo[39m: [32m::1 - - [30/Jun/2025:06:45:23 +0000] "GET /favicon.ico HTTP/1.1" 404 56 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-06-30 12:44:57:4457 [32minfo[39m: [32m::1 - - [30/Jun/2025:07:14:57 +0000] "GET /api/ping HTTP/1.1" 200 112 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-06-30 13:01:31:131 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 13:01:32:132 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 13:01:41:141 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 13:01:48:148 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 15:25:58:2558 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 15:40:05:405 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-02.7dkcqrj.mongodb.net[39m
+2025-06-30 15:40:05:405 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-06-30 15:40:05:405 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-06-30 15:40:05:405 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-06-30 15:40:05:405 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-06-30 16:52:35:5235 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 16:52:35:5235 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 16:52:51:5251 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 16:52:54:5254 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 16:53:52:5352 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 16:53:53:5353 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 19:52:19:5219 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 19:52:19:5219 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 20:53:13:5313 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 20:53:23:5323 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 20:53:23:5323 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 21:53:56:5356 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 21:54:06:546 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 21:54:06:546 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 22:54:59:5459 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 22:54:59:5459 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 22:55:09:559 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-06-30 22:55:10:5510 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-06-30 23:56:03:563 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 00:57:12:5712 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 01:58:16:5816 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 01:58:26:5826 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 01:58:26:5826 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 02:03:47:347 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 02:03:57:357 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 02:03:57:357 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 02:59:03:593 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 02:59:03:593 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 02:59:13:5913 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 02:59:13:5913 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 04:00:07:07 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 04:00:07:07 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 04:00:17:017 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 04:00:17:017 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 05:01:10:110 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 05:01:20:120 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 05:01:20:120 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 05:26:01:261 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 06:02:07:27 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 06:02:07:27 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 07:03:00:30 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 07:03:10:310 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 07:03:10:310 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 08:04:04:44 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 08:04:14:414 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 08:04:14:414 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 08:57:49:5749 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 08:57:49:5749 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 08:58:00:580 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 08:58:01:581 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 09:00:41:041 [32minfo[39m: [32m::1 - - [01/Jul/2025:03:30:41 +0000] "POST /api/auth/login HTTP/1.1" 401 47 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 09:01:19:119 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 12:19:47:1947 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-02.7dkcqrj.mongodb.net[39m
+2025-07-01 12:19:47:1947 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 12:19:47:1947 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 12:19:47:1947 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 12:19:47:1947 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 12:20:13:2013 [32minfo[39m: [32m::1 - - [01/Jul/2025:06:50:13 +0000] "POST /api/auth/login HTTP/1.1" 401 47 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 12:20:33:2033 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 16:51:21:5121 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-00.7dkcqrj.mongodb.net[39m
+2025-07-01 16:51:21:5121 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 16:51:21:5121 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 16:51:21:5121 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 16:51:21:5121 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 17:02:53:253 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 17:02:53:253 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 17:03:03:33 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 17:03:12:312 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 17:04:03:43 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 17:52:06:526 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 17:52:06:526 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 18:25:45:2545 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 18:25:45:2545 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 18:25:55:2555 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 18:25:55:2555 [32minfo[39m: [32mMongoDB reconnected[39m
+2025-07-01 18:26:54:2654 [32minfo[39m: [32m::1 - - [01/Jul/2025:12:56:54 +0000] "POST /api/auth/login HTTP/1.1" 401 47 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:29:46:2946 [32minfo[39m: [32m::1 - - [01/Jul/2025:12:59:46 +0000] "POST /api/auth/login HTTP/1.1" 401 47 "-" "curl/8.7.1"[39m
+2025-07-01 18:29:52:2952 [32minfo[39m: [32m::1 - - [01/Jul/2025:12:59:52 +0000] "GET /api/health HTTP/1.1" 404 55 "-" "curl/8.7.1"[39m
+2025-07-01 18:30:14:3014 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:00:14 +0000] "POST /api/auth/login HTTP/1.1" 401 47 "-" "curl/8.7.1"[39m
+2025-07-01 18:31:35:3135 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-02.7dkcqrj.mongodb.net[39m
+2025-07-01 18:31:35:3135 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:31:35:3135 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:31:35:3135 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:31:35:3135 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:31:45:3145 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-01.7dkcqrj.mongodb.net[39m
+2025-07-01 18:31:45:3145 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:31:45:3145 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:31:45:3145 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:31:45:3145 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:32:36:3236 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-01.7dkcqrj.mongodb.net[39m
+2025-07-01 18:32:36:3236 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:32:36:3236 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:32:36:3236 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:32:36:3236 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:32:44:3244 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-01.7dkcqrj.mongodb.net[39m
+2025-07-01 18:32:44:3244 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:32:44:3244 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:32:44:3244 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:32:44:3244 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:33:51:3351 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-00.7dkcqrj.mongodb.net[39m
+2025-07-01 18:33:51:3351 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:33:51:3351 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:33:51:3351 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:33:51:3351 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:34:14:3414 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:04:14 +0000] "POST /api/auth/login HTTP/1.1" 200 652 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:35:12:3512 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:05:12 +0000] "GET /api/jobs HTTP/1.1" 200 59 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:35:12:3512 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:05:12 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:35:25:3525 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:05:25 +0000] "GET /api/auth/profile HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:35:25:3525 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:05:25 +0000] "GET /api/auth/profile HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:36:05:365 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:06:05 +0000] "POST /api/auth/login HTTP/1.1" 200 652 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:36:47:3647 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:06:47 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:36:47:3647 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:06:47 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:38:22:3822 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 18:45:23:4523 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-02.7dkcqrj.mongodb.net[39m
+2025-07-01 18:45:23:4523 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:45:23:4523 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:45:23:4523 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:45:23:4523 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:45:46:4546 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:15:46 +0000] "GET /api/auth/profile HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:45:46:4546 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:15:46 +0000] "GET /api/auth/profile HTTP/1.1" 404 61 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:46:20:4620 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:16:20 +0000] "POST /api/auth/login HTTP/1.1" 200 652 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:46:29:4629 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:16:29 +0000] "GET /api/jobs HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:46:29:4629 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:16:29 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:47:41:4741 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:17:41 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:47:41:4741 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:17:41 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:49:13:4913 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:19:13 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:49:13:4913 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:19:13 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:54:15:5415 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-02.7dkcqrj.mongodb.net[39m
+2025-07-01 18:54:15:5415 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:54:15:5415 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:54:15:5415 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:54:15:5415 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:57:27:5727 [32minfo[39m: [32mMongoDB Connected: ac-dn2oqvt-shard-00-00.7dkcqrj.mongodb.net[39m
+2025-07-01 18:57:27:5727 [32minfo[39m: [32mConnected to MongoDB[39m
+2025-07-01 18:57:27:5727 [32minfo[39m: [32m🚀 WorkBridge Server running on port 5001[39m
+2025-07-01 18:57:27:5727 [32minfo[39m: [32m📚 API Documentation: http://localhost:5001/api/docs[39m
+2025-07-01 18:57:27:5727 [32minfo[39m: [32m🔗 Health Check: http://localhost:5001/api/ping[39m
+2025-07-01 18:57:53:5753 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:27:53 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:57:53:5753 [32minfo[39m: [32m::1 - - [01/Jul/2025:13:27:53 +0000] "GET /api/jobs HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"[39m
+2025-07-01 18:58:24:5824 [33mwarn[39m: [33mMongoDB disconnected[39m
+2025-07-01 19:46:46:4646 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:46:4646 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:46:4646 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:46:4646 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
+2025-07-01 19:46:47:4647 [31merror[39m: [31mCannot call `users.findOne()` before initial connection is complete if `bufferCommands = false`. Make sure you `await mongoose.connect()` if you have `bufferCommands = false`.[39m
