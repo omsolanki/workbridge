@@ -23,7 +23,7 @@ const getInitialToken = (): string | null => {
 const initialState: AuthState = {
   user: null,
   token: getInitialToken(),
-  isAuthenticated: false, // Don't assume authentication just because token exists
+  isAuthenticated: !!getInitialToken(), // Set to true if token exists
   loading: false,
   error: null,
 };
@@ -200,8 +200,9 @@ const authSlice = createSlice({
       })
       .addCase(getProfile.fulfilled, (state, action) => {
         state.loading = false;
-        // Handle the new response structure: { success: true, data: {...} }
-        state.user = action.payload.data || action.payload;
+        // Handle the response structure: { success: true, data: { user: {...} } }
+        const responseData = action.payload.data || action.payload;
+        state.user = responseData.user || responseData;
         state.isAuthenticated = true;
       })
       .addCase(getProfile.rejected, (state, action) => {
