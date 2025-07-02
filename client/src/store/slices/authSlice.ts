@@ -12,7 +12,9 @@ interface AuthState {
 // Get token safely during initialization
 const getInitialToken = (): string | null => {
   try {
-    return localStorage.getItem("token");
+    const token = localStorage.getItem("token");
+    console.log("Initial token from localStorage:", token);
+    return token;
   } catch {
     return null;
   }
@@ -149,8 +151,11 @@ const authSlice = createSlice({
         state.isAuthenticated = true;
         // Handle the new response structure: { success: true, data: {...} }
         const responseData = action.payload.data || action.payload;
+        console.log("Login response:", action.payload);
+        console.log("Response data:", responseData);
         state.user = responseData.user;
         state.token = responseData.token;
+        console.log("Stored token:", responseData.token);
         try {
           localStorage.setItem("token", responseData.token);
         } catch {

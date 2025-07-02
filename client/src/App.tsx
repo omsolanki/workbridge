@@ -88,6 +88,14 @@ const App: React.FC = () => {
     }
   }, [dispatch]); // Only depend on dispatch, not isAuthenticated
 
+  // Fetch profile when user becomes authenticated but user data is missing
+  useEffect(() => {
+    if (isAuthenticated && !user && !hasAttemptedProfileFetch.current) {
+      hasAttemptedProfileFetch.current = true;
+      dispatch(getProfile());
+    }
+  }, [dispatch, isAuthenticated, user]);
+
   // Reset the ref when user logs out
   useEffect(() => {
     if (!isAuthenticated && !localStorage.getItem("token")) {

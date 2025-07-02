@@ -4,7 +4,6 @@ import { Server } from "socket.io";
 import cors from "cors";
 import helmet from "helmet";
 import compression from "compression";
-import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
 import swaggerJsdoc from "swagger-jsdoc";
@@ -12,7 +11,12 @@ import swaggerUi from "swagger-ui-express";
 
 // Import configurations
 import { connectDB } from "./config/database";
-import { logger } from "./utils/logger";
+import {
+  logger,
+  requestLogger,
+  performanceLogger,
+  errorLogger,
+} from "./utils/logger";
 
 // Import middleware
 import { errorHandler } from "./middleware/errorHandler";
@@ -110,11 +114,6 @@ app.use(
 );
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
-app.use(
-  morgan("combined", {
-    stream: { write: (message) => logger.info(message.trim()) },
-  })
-);
 app.use(limiter);
 
 // API Documentation
@@ -148,7 +147,12 @@ app.use("/api/time-tracking", timeTrackingRoutes);
 // Socket.IO setup
 setupSocketHandlers(io);
 
+// Add enhanced logging middlewares
+app.use(requestLogger);
+app.use(performanceLogger);
+
 // Error handling middleware
+app.use(errorLogger);
 app.use(notFound);
 app.use(errorHandler);
 

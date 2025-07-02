@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import bcrypt from "bcryptjs";
+// Removed bcrypt import since we're not manually hashing passwords anymore
 import dotenv from "dotenv";
 import { User } from "../models/User";
 import { Job } from "../models/Job";
@@ -245,10 +245,10 @@ async function seedDatabase() {
     // Create users
     const createdUsers = [];
     for (const userData of sampleUsers) {
-      const hashedPassword = await bcrypt.hash(userData.password, 10);
+      // Don't hash password manually - let the User model's pre-save middleware handle it
       const user = new User({
         ...userData,
-        password: hashedPassword,
+        password: userData.password, // Pass plain password, let middleware hash it
       });
       const savedUser = await user.save();
       createdUsers.push(savedUser);

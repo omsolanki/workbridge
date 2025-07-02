@@ -175,7 +175,6 @@ async function seedDevelopmentData() {
 
     // Create proposals - ensure each freelancer only submits one proposal per job
     for (let i = 0; i < additionalJobs.length; i++) {
-      const jobData = additionalJobs[i];
       const job = createdJobs[i % createdJobs.length];
       const freelancer = freelancers[i % freelancers.length];
 

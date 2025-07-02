@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import { User, IUser } from "../models/User";
 import { sendEmail } from "../services/emailService";
 import { asyncHandler } from "../middleware/asyncHandler";
+import { authLogger } from "../utils/logger";
 
 interface AuthRequest extends Request {
   user?: IUser;
@@ -117,9 +118,15 @@ export const login = asyncHandler(
     }
 
     // Check for user
-    const user = await User.findOne({ email }).select("+password");
+    const user = await User.findByEmail(email, true);
 
     if (!user) {
+      authLogger.login(
+        email,
+        false,
+        req.ip || req.connection.remoteAddress || "unknown",
+        req.get("User-Agent") || ""
+      );
       res.status(401).json({
         success: false,
         error: "Invalid credentials",
@@ -154,6 +161,12 @@ export const login = asyncHandler(
 
       await user.save();
 
+      authLogger.login(
+        email,
+        false,
+        req.ip || req.connection.remoteAddress || "unknown",
+        req.get("User-Agent") || ""
+      );
       res.status(401).json({
         success: false,
         error: "Invalid credentials",
@@ -174,6 +187,14 @@ export const login = asyncHandler(
     // Generate tokens
     const token = generateToken((user._id as any).toString());
     const refreshToken = generateRefreshToken((user._id as any).toString());
+
+    // Log successful login
+    authLogger.login(
+      email,
+      true,
+      req.ip || req.connection.remoteAddress || "unknown",
+      req.get("User-Agent") || ""
+    );
 
     res.json({
       success: true,
@@ -206,9 +227,16 @@ export const login = asyncHandler(
 // @route   POST /api/auth/logout
 // @access  Private
 export const logout = async (
-  _req: AuthRequest,
+  req: AuthRequest,
   res: Response
 ): Promise<void> => {
+  if (req.user) {
+    authLogger.logout(
+      req.user && req.user._id ? req.user._id.toString() : "unknown",
+      req.ip || req.connection.remoteAddress || "unknown"
+    );
+  }
+
   res.json({
     success: true,
     message: "Logged out successfully",
